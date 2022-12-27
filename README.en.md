@@ -1,85 +1,46 @@
-# React homework template
+**Читати [українською](README.md).**
 
-This project was created with
-[Create React App](https://github.com/facebook/create-react-app). 
-To get acquainted and configure additional features
-[refer to documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Cards of tweets of characters from the trilogy 'Batman. The Dark Knight'
 
-## # Tweet Cards of The Dark Knight Movie Characters
+This project was created based on the
+[React-template](https://github.com/facebook/create-react-app). There you can
+get acquainted with the commands for installation/starting this project.
 
-1. Make sure you have an LTS version of Node.js installed on your computer.
-   [Download and install](https://nodejs.org/en/) if needed.
-2. Clone this repository.
-3. Change the folder name from `react-homework-template` to the name of your project.
-4. Create a new empty GitHub repository.
-5. Open the project in VSCode, launch the terminal and link the project to the GitHub repository 
-  [according to the instructions] (https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories #changing-a-remote-repositorys-url).
-6. Install the project's base dependencies with the `npm install` command.
-7. Start development mode by running the `npm start` command.
-8. Go to [http://localhost:3000](http://localhost:3000) in your browser.
- This page will automatically reload after saving changes to the project files.
+## Source data
 
-## Deploy
+1. Technical assignment located
+   [here](https://bootcampitgeneration.slack.com/files/U0418LD7WBW/F04GDAKGHHQ/________________________________goit__1_.pdf)
+2. The design of the project is presented in
+   [Figma](https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=0%3A1&t=MdaCSZsMd1g1SvZ9-0).
 
-The production version of the project will automatically be linted, built, 
-and deployed to GitHub Pages, in the `gh-pages` branch, every time the `main` 
-branch is updated. For example, after a direct push or an accepted pull request. 
-To do this, you need to edit the `homepage` field in the `package.json` file, 
-replacing `your_username` and `your_repo_name` with your own, and submit the 
-changes to GitHub.
+## Briefly about the application
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
+The page shows cards with characters from the films of the "Batman. The Dark
+Knight" trilogy as well as the information about their number of tweets and
+followers. Presented interactivity on the page: if you want to follow Catwoman
+or Robin, you can click on the FOLLOW button. If you want to recall which of the
+characters you are subscribed to and which are not, just open this page once
+again in your browser. All data on your personal subscriptions are stored and
+will be immediately displayed on the page.
 
-Next, you need to go to the settings of the GitHub repository (`Settings` > `Pages`) 
-and set the distribution of the production version of files from the `/root` 
-folder of the `gh-pages` branch, if this was not done automatically.
+### Functionality
 
-![GitHub Pages settings](./assets/repo-settings.png)
+By clicking on the FOLLOW button, the user subscribes to the character. At the
+same time, the counter of the followers number (FOLLOWERS) increases by 1, and
+the button changes its color and text label to FOLLOWING.
 
-### Deployment status
+Data about all characters is stored in Local Storage, so it always available
+during subsequent sessions in the browser.
 
-The deployment status of the latest commit is displayed with an icon next to its ID.
+If the user wants to unfollow the character, he needs to click on the FOLLOWING
+button and it will return to its original color and the text label FOLLOW. At
+the same time, the number of subscribers will be decreased by 1.
 
-- **Yellow color** - the project is being built and deployed.
-- **Green color** - deployment completed successfully.
-- **Red color** - an error occurred during linting, build or deployment.
+### Application implementation
 
-More detailed information about the status can be viewed by clicking on the icon, 
-and in the drop-down window, follow the link `Details`.
-
-![Deployment status](./assets/status.png)
-
-### Live page
-After some time, usually a couple of minutes, the live page can be viewed at the address 
-specified in the edited `homepage` property. For example, here is a link to a live version for this repository
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-If a blank page opens, make sure there are no errors in the `Console` tab related 
-to incorrect paths to the CSS and JS files of the project (**404**). You most likely 
-have the wrong value for the `homepage` property in the `package.json` file.
-
-### Routing
-If your application uses the `react-router-dom` library for routing, you must 
-additionally configure the `<BrowserRouter>` component by passing the exact name 
-of your repository in the `basename` prop. Slashes at the beginning and end of 
-the line are required.
-
-```jsx
-<BrowserRouter basename="/your_repo_name/">
-  <App />
-</BrowserRouter>
-```
-
-## How it works
-
-![How it works](./assets/how-it-works.png)
-
-1. After each push to the `main` branch of the GitHub repository, a special script 
-  (GitHub Action) is launched from the `.github/workflows/deploy.yml` file.
-2. All repository files are copied to the server, where the project is initialized 
-  and linted and built before deployment.
-3. If all steps are successful, the built production version of the project files is 
-  sent to the `gh-pages` branch. Otherwise, the script execution log will indicate 
-  what the problem is.
+Initially, character data is read from the user.json file and passes into state.
+State is implemented on the parent component for all cards - 'ul'. When clicking
+on the buttons, the state changes and immediately after that, using the
+componentDidUpdate lifecycle method, information is recorded/updated in Local
+Storage. All components are made with a class approach. Styling provided through
+css modules using Flex. There are no additional libraries.
