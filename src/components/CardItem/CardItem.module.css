@@ -1,0 +1,138 @@
+.profile {
+    position: relative;
+    width: 454px;
+    height: 547px;
+    /* margin: 20px auto; */
+    background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
+    box-shadow: -3px 8px 24px rgba(0, 0, 0, 0.23);
+    border-radius: 24px;
+
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.profile:hover{
+    transform: scale(1.02);
+}
+
+.logoWrapper {
+    position: absolute;
+    left: 5.29%;
+    right: 75.33%;
+    top: 4.39%;
+    bottom: 90.86%;
+
+    opacity: 0.3;
+}
+
+.hero {
+    position: absolute;
+    width: 357px;
+    height: 194px;
+    left: 52px;
+    top: 34px;
+}
+
+.divider {
+    position: absolute;
+    width: 454px;
+    height: 8px;
+    left: 0px;
+    top: 251px;
+
+    background: #EBD8FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), inset 0px -2px 4px #AE7BE3, inset 0px 4px 3px #FBF8FF;
+}
+
+.elipseBox {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+        left: 181px;
+            top: 209px;
+    background: #EBD8FF;
+    box-shadow: 0px 5.11111px 5.11111px rgba(0, 0, 0, 0.06), inset 0px -2.55556px 5.11111px #AE7BE3, inset 0px 5.11111px 3.83333px #FBF8FF;
+    border-radius: 46px;
+}
+
+.elipse {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 10px;
+    top: 10px;
+    border-radius: 36px;
+    background: #5736A3;
+}
+
+
+
+.userImage {
+    position: absolute;
+    border-radius: 36px;
+}
+
+.bottomContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 454px;
+    top: 333px;
+
+    color: #EBD8FF;
+}
+
+.textParagraph {
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.followBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+
+    width: 226px;
+    height: 56px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    border-width: 0px;
+
+    background: #EBD8FF;
+
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.followBtnActive {
+    composes: followBtn;
+    background: #5CD3A8;
+}
+
+.followBtn:hover {
+    background: #bc80fc;
+    color: #f0ecf5;
+    cursor: pointer;
+}
+
+.followBtnActive:hover {
+    background: #3db289;
+    cursor: pointer;
+}

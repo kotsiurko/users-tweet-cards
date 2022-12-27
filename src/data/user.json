@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "user": "Bruce Wayne 'Batman'",
+    "tweets": 888,
+    "followers": 100500,
+    "avatar": "https://static1.personality-database.com/profile_images/32a57ac8f4174d5ea51b111b3c04a505.png"
+  },
+  {
+    "id": 2,
+    "user": "Selina Kyle 'Catwoman'",
+    "tweets": 777,
+    "followers": 100400,
+    "avatar": "https://static1.personality-database.com/profile_images/6bfd2bb5a54b40a39d92330055da1839.png"
+  },
+  {
+    "id": 3,
+    "user": "The Joker",
+    "tweets": 666,
+    "followers": 100300,
+    "avatar": "https://static1.personality-database.com/profile_images/cb88c06eed854f95ba3ccba791b09775.png"
+  },
+  {
+    "id": 4,
+    "user": "Bane",
+    "tweets": 555,
+    "followers": 100200,
+    "avatar": "https://static1.personality-database.com/profile_images/4b95702b574f416d83fa53c4ec353c30.png"
+  },
+  {
+    "id": 5,
+    "user": "Ra's Al Ghul / 'Henri Ducard'",
+    "tweets": 444,
+    "followers": 100100,
+    "avatar": "https://static1.personality-database.com/profile_images/f7151e18515c4903909e8b843acfb263.png"
+  },
+  {
+    "id": 6,
+    "user": "John 'Robin' Blake",
+    "tweets": 333,
+    "followers": 90900,
+    "avatar": "https://static1.personality-database.com/profile_images/96c254007e5140f1ab365bfd36b7d0b3.png"
+  },
+  {
+    "id": 7,
+    "user": "James Gordon",
+    "tweets": 222,
+    "followers": 9800,
+    "avatar": "https://static1.personality-database.com/profile_images/35333930a6ae4545aa430672768bf47c.png"
+  },
+  {
+    "id": 8,
+    "user": "Alfred Pennyworth",
+    "tweets": 111,
+    "followers": 888,
+    "avatar": "https://static1.personality-database.com/profile_images/35e453172a194b468a2da071e50d0d45.png"
+  },
+  {
+    "id": 9,
+    "user": "Jonathan Crane 'Scarecrow'",
+    "tweets": 99,
+    "followers": 55,
+    "avatar": "https://static1.personality-database.com/profile_images/d622c4b9bedf4d2db31cef776e930e03.png"
+  }
+]
