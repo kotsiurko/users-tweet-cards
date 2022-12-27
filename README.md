@@ -1,4 +1,4 @@
-**Read in [Egnlish](README.en.md).**
+**Read in [English](README.en.md).**
 
 # Картки твітів персонажів із трилогії 'Бетмен. Темний Лицар'
 
